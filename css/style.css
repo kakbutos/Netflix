@@ -1,0 +1,244 @@
+/* Default settings */
+
+body {
+    font-family: 'Open+Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+html,body {
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Main code */
+
+.header__wrapper {
+    height: 1607px;
+    display: flex;
+}
+
+.black__bg {
+    background-color: #383838; 
+    width: 20%;
+}
+
+.white__bg {
+    background-color: #CCCCCC;
+    width: 80%;
+}
+
+/* Menu with black__bg */
+
+h1 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #43B0ED;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 46px;
+    
+}
+
+a {
+    color: #B7B7B7;
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 40px;
+    list-style-type: none;
+    padding: 0 25px 0 25px;
+    line-height: 2.9;
+}
+
+li {
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 18px;
+    color: #B7B7B7;
+    text-transform: uppercase;
+}
+
+li::after {
+    content:'';
+    display: block;
+    width: 90%;
+    height: 0.1px;
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+li:last-child:after {
+    content:'';
+    display: none;
+}
+
+li:hover {
+    opacity: 0.5;
+    background: #000;
+}
+
+/* Catalog with white__bg */
+
+.search {
+    height: 68px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button { 
+    font-family: 'Open Sans';
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+
+.search__btn {
+    background-color: #E7A04E;
+}
+
+.search__btn:hover {
+    background-color: #e28419;
+}
+
+.add__btn {
+    background-color: #4EE7B0;
+    margin-right: 20px;
+}
+
+.add__btn:hover {
+    background-color: #18c283;
+    margin-right: 20px;
+}
+
+input[type=text] {
+    font-weight: 400;
+    text-align: center;
+    margin-left: 20px;
+    background-color: #fff;
+    width: 35vw;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #C4C4C4;
+    background-image: url('/icons/search_img.svg');
+    background-position: 10px 0; 
+    background-repeat: no-repeat; 
+}
+
+/* Cards */
+
+img{
+    width: 400px;
+    border-radius: 20px 20px 0 0;
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.catalog__card {
+    position: relative;
+    margin: 30px auto;
+    height: 700px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.catalog__card:hover .second__card {
+    display: block;
+}
+
+.card__descr {
+    margin: 12px;
+}
+
+.name__film {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.name__film_translate {
+    font-weight: 500;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #999999;
+}
+
+.name__film_translate::after {
+    content:'';
+    display: block;
+    width: 90%;
+    height: 0.1px;
+    background-color: #999999;;
+    margin: 15px 0;
+}
+
+.film__descr {
+    font-weight: 400;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #000;
+}
+
+.film__time__genre__wrapper{
+    font-weight: 400;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: #999999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}   
+.film__time__genre {
+    position: absolute;
+    display: block;
+    width: 372px;
+    bottom: 25px;
+}
+
+.second__card {
+    z-index: 1;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    height: 700px;
+    width: 400px;
+    border-radius: 20px;
+    display: none;
+}
+
+.descr__btn{
+    background-color: #4EE7B0;
+    margin-right: 20px;
+    margin-top: 340px;
+    margin-left: 134px;
+    font-size: 18px;
+    padding: 10px 25px
+}   
